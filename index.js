@@ -10,7 +10,8 @@ const { Console } = require("console");
 require('dotenv').config(); // load anything in a file call dotenv into an environment variable
 
 const app = express(); // call the express function
-app.listen(3000, () => console.log("listening at 3000")) // running & server listen at port 3000
+const port = process.env.PORT
+app.listen(port, () => console.log(`Starting server at ${port}`)) // running & server listen at port 3000
 app.use(express.static("public")); // access folder "public"
 app.use(express.json({limit: "1mb"})); // let server understand the incoming data as JSON * http://expressjs.com/en/4x/api.html#express.json
 
