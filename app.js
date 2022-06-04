@@ -24,3 +24,12 @@ const log = require("./logger")     // ../ = root folder
 log("Hello")
 
 // npm install dotenv <--- for hiding api keys with environment variables
+
+// Pass to Github
+// git init
+// git add .
+// git commit
+
+// Github >> + >> New repository
+
+// Paste Gitbug command into cmd
