@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Selfie App</h1>
+    <div><a href="/">enter</a> | <a href="/log">list</a> | <a href="/checkins">View Checkins</a></div>
+    <p>latitude: <span id="latitude"></span>&deg;</p>
+    <p>longitude: <span id="longitude"></span>&deg;</p>
+    <p>Summary: <span id="summary"></span></p>
+    <p>Temperature: <span id="temperature"></span>&deg; C</p>
+    <p>(<span id="aq_parameter"></span>) Air Quality: <span id="aq_value"></span> 
+        <span id="aq_unit"></span> last read on <span id="aq_date"></span></p>
+    <label for="anything">Enter anything</label>
+    <input id="anything">
+    <button id="submit">Submit</button>
+    <button id="checkin">Check in</button>
+
+    <script src="sketch.js"></script>  <!-- for p5.js -->
+
+</body>
+</html>
